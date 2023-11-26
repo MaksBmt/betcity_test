@@ -1,0 +1,15 @@
+.success {
+    padding-top: 25px;
+    font-family: Roboto;
+    font-weight: 400;
+    color: $color-title;
+    line-height: 30px;
+    text-align: center;
+
+    &__text {
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 5px;
+        background-color: $blue-success;
+    }
+}

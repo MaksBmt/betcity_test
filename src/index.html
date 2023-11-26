@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+"title":"Главная страница тестового задания для БЕТСИТИ"
+})
+
+<body>
+  <div class="overlay"></div>
+  @@include('html/header.html',{})
+  <main>
+
+    <section class="films">
+      <div class="films__wrap wrap">
+        <h1 class="films__title">Список фильмов из конопоиска</h1>
+        <ul class="films__list">
+    
+        </ul>      
+      </div>
+    </section>
+
+    <section class="popup popup--success">
+      <div class="popup__wrap">
+        <button class="popup__close">
+          <svg class="popup__svg" width="20" height="20">
+            <use xlink:href="img/icons/icons.svg#cross"></use>
+          </svg>
+        </button>
+        <div class="popup__succes success">
+          <p class="success__text">
+            Позравляем! Форма успешно отправлена.
+          </p>
+          <p class="success__text">
+            Будьте у телефона - за вами уже едут.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="popup popup--form">
+      <div class="popup__wrap">
+        <button class="popup__close">
+          <svg class="popup__svg" width="20" height="20">
+            <use xlink:href="img/icons/icons.svg#cross"></use>
+          </svg>
+        </button>
+        <form method="post" class="popup__form form">
+          <h2 class="form__title">Мы перезвоним вам через 33 секунды!</h2>
+          <ul class="form__list">
+            <li class="form__box">
+              <label for="name" class="form__label">Ваше имя:</label>
+              <input type="text" class="form__input" id="name" name="name" placeholder="Ваше имя">
+              <p class="form__error-text"></p>
+            </li>
+            <li class="form__box">
+              <label for="phone" class="form__label">Ваш телефон:</label>
+              <input type="text" class="form__input form__input--tel" id="phone" name="phone" placeholder="+7(000)000-00-00">
+              <p class="form__error-text"></p>
+            </li>
+          </ul>
+          
+          <button  class="form__button">Отправить</button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
